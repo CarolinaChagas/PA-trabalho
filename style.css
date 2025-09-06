@@ -1,0 +1,89 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background:#73d1cc;
+  margin: 0;
+  color: #fff;
+}
+
+.vending-machine {
+  background: #fff;
+  padding: 32px 48px;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(60,60,120,0.18), 0 1.5px 4px rgba(0,0,0,0.08);
+  text-align: center;
+  min-width: 340px;
+  max-width: 95vw;
+  margin-top: 250px;
+  color: #333;
+}
+
+.vending-machine h1 {
+  font-size: 2rem;
+  margin-bottom: 18px;
+  color: #4a4a6a;
+  letter-spacing: 1px;
+}
+
+.moedas, .produtos {
+  margin: 18px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.produtos button{
+  padding: 12px 28px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 7px;
+  border: none;
+  background: #7ed6ca;
+  color: #333;
+  box-shadow: 0 2px 8px rgba(67,198,172,0.08);
+  transition: background 0.2s, transform 0.15s;
+  margin-top: 10px;
+}
+
+.moedas button{
+  padding: 12px 28px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 7px;
+  border: none;
+  background: #4a4a6a;
+  color: white;
+  box-shadow: 0 2px 8px rgba(67,198,172,0.08);
+  transition: background 0.2s, transform 0.15s;
+  margin-top: 10px;
+}
+
+.produtos button:hover{
+  background: linear-gradient(10deg, #73d1cc 0%, #ffffff 100%);
+  transform: translateY(-2px) scale(1.04);
+}
+
+.moedas button:hover{
+  background: #333;
+  transform: translateY(-2px) scale(1.04);
+}
+
+#mensagem {
+  font-weight: bold;
+  color: #4a4a6a;
+  margin-top: 30px;
+  font-size: 1.1rem;
+  min-height: 24px;
+}
+
+#saldo {
+  font-weight: bold;
+  margin-top: 12px;
+  color: #4a4a6a;
+  font-size: 1.05rem;
+}
